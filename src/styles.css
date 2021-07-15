@@ -102,3 +102,22 @@ body {
   display: block;
   margin-left: 18px;
 }
+.open-source-link {
+  font-family: monospace;
+  font-size: 16px;
+  color: #ece98e;
+  position: fixed;
+  bottom: 50px;
+}
+.open-source-link:hover {
+  text-decoration: underline;
+  color: #f3f2dc;
+}
+.author {
+  font-family: monospace;
+  font-size: 16px;
+  color: white;
+  position: fixed;
+  bottom: 50px;
+  left: 230px;
+}
