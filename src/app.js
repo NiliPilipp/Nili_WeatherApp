@@ -115,7 +115,6 @@ function getCity(event) {
   }
 }
 function showWeatherforCurrentPosition(response) {
-  console.log("showWeatherforCurrentPosition");
   let apiKey = "4fc9de9420224385e6f3f281435126d7";
   let units = "metric";
   let latitude = response.coords.latitude;
@@ -144,6 +143,8 @@ function getCurrentDate() {
   currentMonth.innerHTML = getCurrentMonth(now.getMonth());
   currentYear.innerHTML = now.getFullYear();
 
+  let todayPlusOne = document.querySelector(".today-plus-one");
+  todayPlusOne.innerHTML = getCurrentDay(now.getDay() + 1);
   let todayPlusTwo = document.querySelector(".today-plus-two");
   todayPlusTwo.innerHTML = getCurrentDay(now.getDay() + 2);
   let todayPlusThree = document.querySelector(".today-plus-three");
